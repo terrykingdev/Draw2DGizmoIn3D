@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dehqpyk4au1hl"]
+
+[ext_resource type="Script" path="res://DrawGizmo.gd" id="2_wlix0"]
+[ext_resource type="Script" path="res://FlyCamera.gd" id="3_2obm0"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+
+[node name="Gizmo" type="Node3D" parent="CSGBox3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.5, 0.5, 0.5)
+
+[node name="Gizmo2DDraw" type="Node2D" parent="CSGBox3D/Gizmo"]
+scale = Vector2(4.52, 6.36)
+script = ExtResource("2_wlix0")
+x = 125.0
+line_thickness = 1
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.133047, 0.64, 2.10228)
+fov = 55.0
+script = ExtResource("3_2obm0")
+move_speed = 3.0
+capture_mouse = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.376305, 0.926496, 0, -0.926496, 0.376305, 0, 4.03297, 0)
