@@ -4,7 +4,7 @@ I couldn't find many details about drawing in the 3D viewport for creating debug
 
 However... There were some strange issues which I hope someone can shed some light on. Firstly the aspect ratio isn't square, it seems to follow the 4:3 ratio which resulted in the circle coming out as an ellipse. So it actually draws an ellipse now and stretches it horizontally.
 
-The second weirder issue is to bet the lines matching accurately I had to use some fudge values which I matched by trial and error. These are the xFudge (4.52) and yFudge (4.77). If changed most of the viewport settings and it didn't seem to have any effect so I can't see where the values are coming from.
+The second weirder issue is to get the lines matching accurately I had to use some fudge values which I matched by trial and error. These are the xFudge (4.52) and yFudge (4.77). If changed most of the viewport settings and it didn't seem to have any effect so I can't see where the values are coming from.
 
 Another issue which would be a nice to fix rather than essential is when a point is behind the camera is reverses and gets drawn going into the screen. So fixes welcome :)
 
